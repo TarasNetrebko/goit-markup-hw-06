@@ -44,12 +44,28 @@
             </div>
         </section>
         <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
+            <div class="modal">                
                 <button class="btn-close" aria-label="Закрыть" data-modal-close>
                     <svg class="close-icon">
                         <use href="images/icons.svg#icon-close"></use>
                     </svg>
-                </button>        
+                </button>  
+                <form class="modal-form" autocomplete="off">
+                    <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
+                    <label for="user-name" class="modal-name-label">Имя</label>
+                    <input type="text" name="name" id="user-name" class="modal-inputs" autocomplete="name">
+                    <label for="user-phone-number" class="modal-name-label">Телефон</label>
+                    <input type="tel" name="phone-number" id="user-phone-number" class="modal-inputs" autocomplete="tel">
+                    <label for="user-email" class="modal-name-label">Почта</label>
+                    <input type="email" name="email" id="user-email" class="modal-inputs" autocomplete="email">
+                    <label for="modal-textarea" class="modal-name-label">Комментарий</label>
+                    <textarea name="comment" id="modal-textarea" rows="10" class="modal-textarea" placeholder="Введите текст"></textarea>
+                    <div class="agreement">
+                    <input type="checkbox" name="" id="modal-checkbox">
+                    <label for="modal-checkbox" class="agreement-stroke">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+                    </div>
+                    <button type="submit" class="btn-primary modal-submit-button">Отправить</button>
+                </form>      
             </div>
         </div>
                 <!-- Особенности -->
@@ -351,7 +367,7 @@
                 </ul>
             </address>
             </div>
-            <div class="social-container">
+            <div>
                 <b class="footer-call upper-text">присоединяйтесь</b>
                 <ul class="social-list list">
                     <li class="social-item">
@@ -384,6 +400,15 @@
                     </li>
                 </ul>
             </div>
+            <form class="subscribe-form" autocomplete="off">
+                <label for="footer-subscribe-input" class="footer-call upper-text footer-subscribe-label">подпишитесь на рассылку</label>
+                <div class="subscribe-form-actions">
+                    <input type="email" placeholder="E-mail" id="footer-subscribe-input" class="footer-subscribe-input">
+                    <button type="submit" class="btn-primary footer-subscribe-button">Подписаться<svg class="icon-send">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg></button>
+                </div>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
