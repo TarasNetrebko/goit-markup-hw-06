@@ -348,7 +348,6 @@ textarea:focus {
   border-radius: 4px;
   outline: none;
 }
-.modal-inputs:hover,
 .modal-inputs:focus,
 .modal-inputs:active {
   border: 1px solid var(--accent-color);
