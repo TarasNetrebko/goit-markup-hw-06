@@ -53,11 +53,26 @@
                 <form class="modal-form" autocomplete="off">
                     <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
                     <label for="user-name" class="modal-name-label">Имя</label>
-                    <input type="text" name="name" id="user-name" class="modal-inputs" autocomplete="name">
+                    <div class="modal-input-containers">
+                        <input type="text" name="name" id="user-name" class="modal-inputs modal-input-name" autocomplete="name">
+                        <svg class="icon-modal-person icon-modal">
+                            <use href="./images/icons.svg#icon-modal-person"></use>
+                        </svg>
+                    </div>
                     <label for="user-phone-number" class="modal-name-label">Телефон</label>
-                    <input type="tel" name="phone-number" id="user-phone-number" class="modal-inputs" autocomplete="tel">
+                    <div class="modal-input-containers">
+                        <input type="tel" name="phone-number" id="user-phone-number" class="modal-inputs modal-input-tel" autocomplete="tel">
+                        <svg class="icon-modal-phone icon-modal">
+                            <use href="./images/icons.svg#icon-modal-phone"></use>
+                        </svg>
+                    </div>
                     <label for="user-email" class="modal-name-label">Почта</label>
-                    <input type="email" name="email" id="user-email" class="modal-inputs" autocomplete="email">
+                    <div class="modal-input-containers">
+                        <input type="email" name="email" id="user-email" class="modal-inputs modal-input-email" autocomplete="email">
+                        <svg class="icon-modal-envelope icon-modal">
+                            <use href="./images/icons.svg#icon-modal-envelope"></use>
+                        </svg>
+                    </div>
                     <label for="modal-textarea" class="modal-name-label">Комментарий</label>
                     <textarea name="comment" id="modal-textarea" rows="10" class="modal-textarea" placeholder="Введите текст"></textarea>
                     <div class="agreement">

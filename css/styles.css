@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.03em;
 }
 * {
-  transition-property: background-color, transform, box-shadow, color, opacity, visibility;
+  transition-property: background-color, transform, box-shadow, color, opacity, visibility, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -341,9 +341,9 @@ textarea:focus {
   letter-spacing: 0.01em;
 }
 .modal-inputs {
-  margin-bottom: 10px;
+  padding-left: 42px;
   height: 40px;
-
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -351,6 +351,44 @@ textarea:focus {
 .modal-inputs:focus,
 .modal-inputs:active {
   border: 1px solid var(--accent-color);
+}
+.modal-input-name:focus + .icon-modal-person,
+.modal-input-name:active + .icon-modal-person {
+  color: var(--accent-color);
+}
+.modal-input-containers {
+  position: relative;
+  margin-bottom: 10px;
+}
+.icon-modal {
+  transition-duration: 0ms;
+  color: var(--secondary-text-color);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.icon-modal-person {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+.modal-input-tel:focus + .icon-modal-phone,
+.modal-input-tel:active + .icon-modal-phone {
+  color: var(--accent-color);
+}
+.icon-modal-phone {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+}
+.modal-input-email:focus + .icon-modal-envelope,
+.modal-input-email:active + .icon-modal-envelope {
+  color: var(--accent-color);
+}
+.icon-modal-envelope {
+  position: absolute;
+  width: 15px;
+  height: 12px;
 }
 .modal-textarea {
   margin-bottom: 20px;
@@ -368,7 +406,6 @@ textarea:focus {
 .modal-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-textarea:hover,
 .modal-textarea:focus,
 .modal-textarea:active {
   border: 1px solid var(--accent-color);
