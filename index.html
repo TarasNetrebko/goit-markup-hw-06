@@ -76,7 +76,8 @@
                     <label for="modal-textarea" class="modal-name-label">Комментарий</label>
                     <textarea name="comment" id="modal-textarea" rows="10" class="modal-textarea" placeholder="Введите текст"></textarea>
                     <div class="agreement">
-                    <input type="checkbox" name="" id="modal-checkbox">
+                    <input type="checkbox" name="topic" id="modal-checkbox" class="modal-checkbox">
+                    <span class="checkbox-icon"></span>
                     <label for="modal-checkbox" class="agreement-stroke">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
                     </div>
                     <button type="submit" class="btn-primary modal-submit-button">Отправить</button>
@@ -418,7 +419,7 @@
             <form class="subscribe-form" autocomplete="off">
                 <label for="footer-subscribe-input" class="footer-call upper-text footer-subscribe-label">подпишитесь на рассылку</label>
                 <div class="subscribe-form-actions">
-                    <input type="email" placeholder="E-mail" id="footer-subscribe-input" class="footer-subscribe-input">
+                    <input type="email" name="email" placeholder="E-mail" id="footer-subscribe-input" class="footer-subscribe-input">
                     <button type="submit" class="btn-primary footer-subscribe-button">Подписаться<svg class="icon-send">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg></button>
